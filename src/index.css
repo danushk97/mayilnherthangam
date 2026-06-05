@@ -21,7 +21,7 @@
   --shadow-lg: 0 14px 40px rgba(80, 40, 50, 0.1);
   --font-display: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   --font-script: 'Parisienne', cursive;
-  --font-hero-script: 'Pinyon Script', cursive;
+  --font-hero-accent: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
   --font-ui: 'Josefin Sans', system-ui, sans-serif;
 }
 
@@ -177,16 +177,28 @@ body {
   overflow: hidden;
 }
 
-.petal {
+.petal,
+.falling-clover {
   position: absolute;
-  top: -20px;
-  background: var(--rose-light);
-  border-radius: 50% 0 50% 0;
+  top: -28px;
   animation: petal-fall var(--duration) linear infinite;
   animation-delay: var(--delay);
   transform: rotate(var(--rotation));
-  filter: blur(0.4px);
-  opacity: 0.7;
+  pointer-events: none;
+  user-select: none;
+}
+
+.falling-clover {
+  background-color: var(--rose-light);
+  mask-image: var(--clover-mask);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: var(--clover-mask);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  filter: blur(0.3px);
 }
 
 @keyframes petal-fall {
@@ -367,12 +379,14 @@ body {
 }
 
 .hero-subtitle {
-  font-family: var(--font-hero-script);
-  font-size: clamp(2.2rem, 7vw, 3.5rem);
+  font-family: var(--font-hero-accent);
+  font-size: clamp(0.95rem, 2.8vw, 1.15rem);
   font-weight: 400;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
   color: var(--rose);
-  margin-top: 0.15rem;
-  line-height: 1.3;
+  margin-top: 0.75rem;
+  line-height: 1;
 }
 
 .hero-divider {
@@ -884,5 +898,6 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .petal { animation: none; display: none; }
+  .petal,
+  .falling-clover { animation: none; display: none; }
 }

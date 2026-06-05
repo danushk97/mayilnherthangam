@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     meta: {
-      title: 'One Year With You',
+      title: 'One Year of Us',
       description: 'Our first anniversary — a love letter',
     },
     langToggle: { label: 'Switch language' },
@@ -16,7 +16,7 @@ export const translations = {
     dateBar: '6 · JUNE · 2025 — 2026',
     hero: {
       title: 'One Year',
-      subtitle: 'with you, my love',
+      subtitle: 'of us',
       dedicationPrefix: 'For',
       dedicationMid: '— my',
       dedicationEnd: '',
@@ -26,8 +26,8 @@ export const translations = {
       greeting: (her) => `My ${her},`,
       paragraphs: [
         { text: "I'm sorry that I couldn't be there with you and I can't explain how sad I feel about not being able to do that." },
-        { text: "It's been a year since that flustered guy first met you and shook your hand, and I still can't believe how quickly time has flown. As I always tell you, even if we got to spend lifetimes together, it still wouldn't be enough for us." },
-        { text: "Even after all these years, I'm still falling and I know I'll keep falling for those mesmerizing eyes and that gorgeous smile. Every moment I spend with you feels magical — I mean that. I want this magic in my life forever, and I promise I will never let you down, no matter what." },
+        { text: "It's been a year since that flustered guy first met you and shook your hand, and I still can't believe how quickly time has flown. As I always tell you, even if we got to spend all the seven lifetimes together, it still wouldn't be enough for us." },
+        { text: "Even after all these years, I'm still falling and I know I'll keep falling for those mesmerizing eyes and that gorgeous smile. Every moment I spend with you feels magical(I mean that!). I want this magic in my life forever, and I promise I will never let you down, no matter what." },
         { text: "Whenever I see you, I'm always not sure where all that happiness comes from and I will be like eeeeeeeeeee the whole time." },
         { text: 'A heart is useless without life in it — and I think you are the life within my heart.', quote: true },
         { text: 'I love you more than anything in this world, mayil/thangam!' },
@@ -80,7 +80,7 @@ export const translations = {
 
   fr: {
     meta: {
-      title: 'Un An Avec Toi',
+      title: 'Un An à Nous',
       description: 'Notre premier anniversaire — une lettre d\'amour',
     },
     langToggle: { label: 'Changer de langue' },
@@ -95,7 +95,7 @@ export const translations = {
     dateBar: '6 · JUIN · 2025 — 2026',
     hero: {
       title: 'Un An',
-      subtitle: 'avec toi, mon amour',
+      subtitle: 'à nous',
       dedicationPrefix: 'Pour',
       dedicationMid: '— ma',
     },

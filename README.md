@@ -1,4 +1,4 @@
-# One Year With You — Anniversary Site
+# One Year of Us — Anniversary Site
 
 A romantic React site for your first anniversary, with your love letter, photo gallery, and a song — deployable to GitHub Pages.
 
