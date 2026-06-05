@@ -6,6 +6,9 @@ export const siteConfig = {
   petName: 'Thangam',
   location: 'PONDICHERRY · 2026',
 
+  // Unlock code (base64). Generate: btoa('your-code'.toLowerCase())
+  accessCodeB64: 'aXNrb3Bl',
+
   songFile: 'music/Oru_Beautiful_Reality.mp3',
 
   priorityPhotos: [

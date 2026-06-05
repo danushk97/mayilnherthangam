@@ -5,6 +5,14 @@ export const translations = {
       description: 'Our first anniversary — a love letter',
     },
     langToggle: { label: 'Switch language' },
+    gate: {
+      eyebrow: 'A little secret',
+      title: 'Enter the code',
+      subtitle: 'Something only you would know',
+      placeholder: 'Code',
+      button: 'Open',
+      error: 'That code is not quite right — try again',
+    },
     dateBar: '6 · JUNE · 2025 — 2026',
     hero: {
       title: 'One Year',
@@ -76,6 +84,14 @@ export const translations = {
       description: 'Notre premier anniversaire — une lettre d\'amour',
     },
     langToggle: { label: 'Changer de langue' },
+    gate: {
+      eyebrow: 'Un petit secret',
+      title: 'Entrez le code',
+      subtitle: 'Quelque chose que vous seule connaissez',
+      placeholder: 'Code',
+      button: 'Ouvrir',
+      error: 'Ce code n\'est pas le bon — réessayez',
+    },
     dateBar: '6 · JUIN · 2025 — 2026',
     hero: {
       title: 'Un An',

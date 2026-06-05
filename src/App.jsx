@@ -5,11 +5,22 @@ import ClosingSection from './components/ClosingSection'
 import FallingPetals from './components/FallingPetals'
 import LanguageToggle from './components/LanguageToggle'
 import MusicPlayer from './components/MusicPlayer'
+import CodeGate, { isUnlocked } from './components/CodeGate'
 import { assetUrl } from './components/Polaroid'
 import { useLanguage } from './i18n/LanguageContext'
 import { siteConfig } from './config'
 
 export default function App() {
+  const [unlocked, setUnlocked] = useState(isUnlocked)
+
+  if (!unlocked) {
+    return <CodeGate onUnlock={() => setUnlocked(true)} />
+  }
+
+  return <AnniversarySite />
+}
+
+function AnniversarySite() {
   const { t } = useLanguage()
   const [lightboxIndex, setLightboxIndex] = useState(null)
 
