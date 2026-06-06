@@ -3,6 +3,22 @@ import { useLanguage } from '../i18n/LanguageContext'
 import { siteConfig } from '../config'
 import { assetUrl } from './Polaroid'
 
+function PlayIcon() {
+  return (
+    <svg className="music-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M8 6.5v11l9-5.5-9-5.5z" />
+    </svg>
+  )
+}
+
+function PauseIcon() {
+  return (
+    <svg className="music-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M7 6h3v12H7V6zm7 0h3v12h-3V6z" />
+    </svg>
+  )
+}
+
 export default function MusicPlayer() {
   const { t } = useLanguage()
   const audioRef = useRef(null)
@@ -33,11 +49,7 @@ export default function MusicPlayer() {
         onClick={toggle}
         aria-label={playing ? t.music.pause : t.music.play}
       >
-        {playing ? (
-          <span className="music-icon">⏸</span>
-        ) : (
-          <span className="music-icon">▶</span>
-        )}
+        {playing ? <PauseIcon /> : <PlayIcon />}
       </button>
       <span className="music-pill-title">{t.music.title}</span>
     </div>
