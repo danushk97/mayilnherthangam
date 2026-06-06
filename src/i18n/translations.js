@@ -2,7 +2,7 @@ export const translations = {
   en: {
     meta: {
       title: 'One Year of Us',
-      description: 'Our first anniversary — a love letter',
+      description: 'Our first anniversary',
     },
     langToggle: { label: 'Switch language' },
     gate: {
